@@ -1,0 +1,158 @@
+body{
+	padding: 20px;
+}
+#covid {
+	height: 150px;
+}
+#ctext{
+	font-size: 55px;
+	text-align: right;
+	color: #b23e3d;
+	font-family: serif;
+}
+#nav-bar{
+	background-color: #b23e3d;
+	color: white;
+	font-family: serif;
+	height: 28px;
+	font-size: 20px;
+}
+#nav-bar0{
+	background-color: #b23e3d;
+	color: white;
+	font-family: serif;
+	height: 26px;
+	font-size: 18px;
+}
+#nav-bar img{
+	height: 24px;
+}
+hr{
+	margin: 0px;
+	color: white;
+	border: 0px;
+	height: 1px;
+}
+.ni {
+	height: 18px;
+}
+.ni{
+	margin-bottom: 0px;
+}
+.si{
+	margin-bottom: 0px;
+}
+.ei{
+	margin-bottom: 0px;
+}
+.wi{
+	margin-bottom: 0px;
+}
+.nei{
+	margin-bottom: 0px;
+}
+.dropni{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 100px;
+	box-shadow: 0px 20px 36px 0px;
+	height: 19px;
+	font-size: 15px;
+}
+.dropni a{
+	color: white;
+	padding: 5px 15px;
+	text-align: right;
+	background-color: #b23e3d;
+	display: block;
+}
+.ni1{
+	width: 100px;
+	text-align: right;
+	margin-bottom: 0px;
+}
+.dropni:hover ,.ni:hover + .dropni{
+	display: block;
+}
+.ni1:hover + .dropni{
+	display: block;
+}
+.dropsi{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 100px;
+	box-shadow: 0px 8px 16px 0px;
+	height: 19px;
+	font-size: 15px;
+}
+.dropsi a{
+	color: white;
+	padding: 5px 20px;
+	background-color: #b23e3d;
+	display: block;
+}
+.dropsi:hover ,.si:hover + .dropsi{
+	display: block;
+}
+.dropwi{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 100px;
+	box-shadow: 0px 8px 16px 0px;
+	height: 19px;
+	font-size: 15px;
+}
+.dropwi a{
+	color: white;
+	padding: 5px 20px;
+	background-color: #b23e3d;
+	display: block;
+}
+.dropwi:hover ,.wi:hover + .dropwi{
+	display: block;
+}
+.dropei{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 100px;
+	box-shadow: 0px 8px 16px 0px;
+	height: 19px;
+	font-size: 15px;
+}
+.dropei a{
+	color: white;
+	padding: 5px 20px;
+	background-color: #b23e3d;
+	display: block;
+}
+.dropei:hover ,.ei:hover + .dropei{
+	display: block;
+}
+.dropnei{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 100px;
+	box-shadow: 0px 8px 16px 0px;
+	height: 19px;
+	font-size: 15px;
+}
+.dropnei a{
+	color: white;
+	padding: 5px 25px;
+	background-color: #b23e3d;
+	display: block;
+}
+.dropnei:hover ,.nei:hover + .dropnei{
+	display: block;
+}
+

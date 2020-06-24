@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Covid-19 Predictions</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="covid19.css">
+	<style>
+	
+footer{
+  background-color:lightsteelblue;
+  padding: 10px;
+  
+
+}
+ul{
+	padding-left:40%;
+	color:white;
+	
+}
+ li{
+	 display: inline-block;
+ }
+ 
+/*# sourceMappingURL=bootstrap.css.map */
+
+@media(max-width: 900px){
+	body{
+	padding: 20px;
+	width: 100%;
+}
+.row{
+	width: 100%;
+	padding: 10px;
+}
+.footer{
+	height: 100px;
+    border-radius: 5px;
+}
+ul{
+	margin-bottom: 0px;
+}
+.footer img{
+	height: 10px;
+	padding-left: 10px;
+}
+li{
+	font-size: 10px;
+}
+p{
+	font-size: 6px;
+}
+#row{
+	width: 100%;
+}
+#covid {
+	width: 100%;
+	padding: 0px;
+}
+#ctext{
+	font-size: 10px;
+	color: #b23e3d;
+	font-family: serif;
+	text-align: right;
+	height: 10px;
+	padding: 0px;
+}
+#nav-bar{
+	background-color: #b23e3d;
+	color: white;
+	font-family: serif;
+	height: 18px;
+	font-size: 15px;
+	margin: 0px;
+	padding: 0px;
+}
+.col-md-1{
+	width: 8.5%;
+	padding: 1px;
+}
+.col-md-2{
+	width: 17%;
+	padding: 1px;
+}
+.col-md-3{
+	width: 23%;
+	padding: 1px;
+}
+.col-md-6{
+	width: 50%;
+}
+.col-md-9{
+	width: 75%;
+}
+#nav-bar0{
+	background-color: #b23e3d;
+	color: white;
+	font-family: serif;
+	height: 18px;
+	font-size: 6px;
+	margin: 0px;
+	padding: 0px;
+}
+#nav-bar img{
+	height: 24px;
+}
+hr{
+	margin: 0px;
+	color: white;
+	border: 0px;
+	height: 1px;
+}
+.ni,.si,.nei,.ei,.wi {
+	height: 17px;
+	margin-bottom: 0px;
+}
+
+.dropni{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 90%;
+	box-shadow: 0px 20px 36px 0px;
+	height: 19px;
+	font-size: 6px;
+}
+.dropni a{
+	color: white;
+	padding: 1px 4px;	
+	background-color: #b23e3d;
+	display: block;
+	font-size: 6px;
+
+}
+.ni1{
+	width: 100px;
+	text-align: right;
+	margin-bottom: 0px;
+}
+#c1,#c2,#c3,#c4,#c5,#c6{
+	height: 18px;
+}
+.dropni:hover ,.ni:hover + .dropni{
+	display: block;
+}
+.ni1:hover + .dropni{
+	display: block;
+}
+.dropsi{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 90%;
+	box-shadow: 0px 20px 36px 0px;
+	height: 19px;
+	font-size: 6px;
+}
+.dropsi a{
+	color: white;
+	padding: 1px 4px;	
+	background-color: #b23e3d;
+	display: block;
+	font-size: 6px;
+}
+.dropsi:hover ,.si:hover + .dropsi{
+	display: block;
+}
+.dropwi{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 90%;
+	box-shadow: 0px 20px 36px 0px;
+	height: 19px;
+	font-size: 6px;
+}
+.dropwi a{
+	color: white;
+	padding: 1px 4px;	
+	background-color: #b23e3d;
+	display: block;
+	font-size: 6px;
+}
+.dropwi:hover ,.wi:hover + .dropwi{
+	display: block;
+}
+.dropei{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 90%;
+	box-shadow: 0px 20px 36px 0px;
+	height: 19px;
+	font-size: 6px;
+}
+.dropei a{
+	color: white;
+	padding: 1px 4px;	
+	background-color: #b23e3d;
+	display: block;
+	font-size: 6px;
+}
+.dropei:hover ,.ei:hover + .dropei{
+	display: block;
+}
+.dropnei{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 90%;
+	box-shadow: 0px 20px 36px 0px;
+	height: 19px;
+	font-size: 6px;
+}
+.dropnei a{
+	color: white;
+	padding: 1px 4px;	
+	background-color: #b23e3d;
+	display: block;
+	font-size: 6px;
+}
+.dropnei:hover ,.nei:hover + .dropnei{
+	display: block;
+}
+.flip-card {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  perspective: 1000px;
+}
+h3{
+	font-size: 6px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color:black;
+	color: white;
+  padding-top:15px ;
+}
+.flip-card-back {
+  background-color: black;
+  color: white;
+  padding-top:15px ;
+  transform: rotateY(180deg);
+}
+ td {
+  padding-right: 35px;
+}
+table{
+	display: flexbox;
+	align-content: center;
+	margin: 100px;
+	padding: 5px;
+}
+#ind{
+	width: 100%;
+}
+#graph{
+	width: 50%;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+h3{
+	font-size:  15px;
+}
+h6{
+	font-size: 10px;
+}
+#ta{
+	width: 50%;
+	margin-top: -40px;
+}
+#al{
+	 margin-top: -50px;
+    height: 55px;
+    width: 100%;;
+}
+#ac,#to,#de,#re{
+	font-size: 6px;
+}
+#ac1,#to1,#de1,#re1{
+	font-size: 6px;
+}
+h5{
+	font-size: 6px;
+}
+}
+@media(min-width: 900px){
+	body{
+	padding: 20px;
+}
+#covid {
+	height: 150px;
+}
+#ctext{
+	font-size: 55px;
+	text-align: right;
+	color: #b23e3d;
+	font-family: serif;
+}
+#nav-bar{
+	background-color: #b23e3d;
+	color: white;
+	font-family: serif;
+	height: 28px;
+	font-size: 20px;
+}
+#nav-bar0{
+	background-color: #b23e3d;
+	color: white;
+	font-family: serif;
+	height: 26px;
+	font-size: 18px;
+}
+#nav-bar img{
+	height: 24px;
+}
+hr{
+	margin: 0px;
+	color: white;
+	border: 0px;
+	height: 1px;
+}
+.ni,.si,.nei,.ei,.wi {
+	height: 28px;
+	margin-bottom: 0px;
+}
+
+.dropni{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 100px;
+	box-shadow: 0px 20px 36px 0px;
+	height: 19px;
+	font-size: 15px;
+}
+.dropni a{
+	color: white;
+	padding: 1px 15px;
+	text-align: right;
+	background-color: #b23e3d;
+	display: block;
+}
+.ni1{
+	width: 100px;
+	text-align: right;
+	margin-bottom: 0px;
+}
+.dropni:hover ,.ni:hover + .dropni{
+	display: block;
+}
+.ni1:hover + .dropni{
+	display: block;
+}
+.dropsi{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 100px;
+	box-shadow: 0px 8px 16px 0px;
+	height: 19px;
+	font-size: 15px;
+}
+.dropsi a{
+	color: white;
+	padding: 1px 15px;
+	background-color: #b23e3d;
+	display: block;
+}
+.dropsi:hover ,.si:hover + .dropsi{
+	display: block;
+}
+.dropwi{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 100px;
+	box-shadow: 0px 8px 16px 0px;
+	height: 19px;
+	font-size: 15px;
+}
+.dropwi a{
+	color: white;
+	padding: 1px 20px;
+	background-color: #b23e3d;
+	display: block;
+}
+.dropwi:hover ,.wi:hover + .dropwi{
+	display: block;
+}
+.dropei{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 100px;
+	box-shadow: 0px 8px 16px 0px;
+	height: 19px;
+	font-size: 15px;
+}
+.dropei a{
+	color: white;
+	padding: 1px 20px;
+	background-color: #b23e3d;
+	display: block;
+}
+.dropei:hover ,.ei:hover + .dropei{
+	display: block;
+}
+.dropnei{
+	padding-top: 0px;
+	display: none;
+	position: absolute;
+	font-family: serif;
+	max-width: 100px;
+	box-shadow: 0px 8px 16px 0px;
+	height: 19px;
+	font-size: 15px;
+}
+.dropnei a{
+	color: white;
+	padding: 1px 25px;
+	background-color: #b23e3d;
+	display: block;
+}
+.dropnei:hover ,.nei:hover + .dropnei{
+	display: block;
+}
+.flip-card {
+  background-color: transparent;
+  width: 124px;
+  height: 124px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color:black;
+	color: white;
+  padding-top:40px ;
+}
+.flip-card-back {
+  background-color: black;
+  color: white;
+  padding-top:40px ;
+  transform: rotateY(180deg);
+}
+ td {
+  padding-right: 35px;
+}
+table{
+	display: flexbox;
+	align-content: center;
+	margin: 100px;
+	padding: 5px;
+}
+#ind{
+	height: 290px;
+}
+#graph{
+	margin-left: 120px;
+	margin-top: 60px;
+}
+#ta{
+	float: right;width: 730px;
+	margin-top: 70px;
+}
+#al{
+	margin-top: 50px;
+}
+
+.red{
+  color: red !important;
+}
+.footer{
+	height: 150px;
+}
+.footer img{
+	height: 50px;
+	padding-right: 20px;
+}
+li{
+	font-size: 20px;
+	padding-right: 10px;
+}
+}
+</style>
+</head>
+<body>
+	<div class="row" id="row">
+		<div class="col-md-9" id="col1">
+			<div class="row">
+			<div class="col-md-9">
+			<img id="covid" src="https://lh3.googleusercontent.com/z3AWitrKeKVqOr0kGaVW3qbaiEUbd8JieD_rEgrDmpp-qN9fgxaxQT73PtYtPlIkIGoH2rMY6Xtz47Lhi5I5yeG2wdmmFwpOKL8MdBxo7Zv1N6eDfohLxHDh5dr7ala8fNzP_4E_i28"> 
+			</div>
+			</div>
+			<div class="row" >
+				<div class="col-md-12">
+					<p id="ctext">India Future Predictions</p>
+				</div>
+			</div>
+			<div class="row" id="nav-bar0">
+				<p>Choose Your Region!!</p>
+			</div>
+			<hr>
+			<div class="row" id="nav-bar">
+				<div class="col-md-1" id="c1">
+					<p>India</p>
+				</div>
+				<div class="col-md-2" id="c2">
+					<p class="ni">North India</p>
+					<div class="dropni">
+						<a href="/stateview/jk">Jammu & Kashmir</a>
+						<a href="/stateview/ld">Ladakh</a>
+						<a href="/stateview/hp">Himachal Pradesh</a>
+						<a href="/stateview/ut">Uttarakand</a>
+						<a href="/stateview/ch">Chandigarh</a>
+						<a href="/stateview/dl">Delhi</a>
+						<a href="/stateview/hr">Haryana</a>
+						<a href="/stateview/pd">Punjab</a>
+						<a href="/stateview/up">Uttarpradesh</a>						
+					</div>
+				</div>
+				<div class="col-md-2" id="c3">
+					<p class="si">South India</p>
+					<div class="dropsi">
+						<a href="/stateview/tn">Tamil Nadu</a>
+						<a href="/stateview/kl">Kerala</a>
+						<a href="/stateview/ap">Andhra Pradesh</a>
+						<a href="/stateview/tg">Telangana</a>
+						<a href="/stateview/ka">Karnataka</a>
+						<a href="/stateview/py">Pududcherry</a>
+						<a href="/stateview/la">Lakshwadeep</a>
+						<a href="/stateview/an">Andaman & Nicbar</a>
+					</div>
+				</div>
+				<div class="col-md-2" id="c4">
+					<p class="nei">North East India</p>
+					<div class="dropnei">
+						<a href="/stateview/sk">Sikkim</a>
+						<a href="/stateview/ar">Arunachal Pradesh</a>
+						<a href="/stateview/as">Assam</a>
+						<a href="/stateview/mn">Manipur</a>
+						<a href="/stateview/ml">Meghalaya</a>
+						<a href="/stateview/mz">Mizoram</a>
+						<a href="/stateview/nl">Nagaland</a>
+						<a href="/stateview/tr">Tripura</a>
+					</div>
+				</div>
+				<div class="col-md-2" id="c5">
+					<p class="wi">West India</p>
+					<div class="dropwi">
+						<a href="/stateview/dn">Dadra & Nagar haveli</a>
+						<a href="/stateview/dd">Daman & Diu</a>
+						<a href="/stateview/ga">Goa</a>
+						<a href="/stateview/gj">Gujarath</a>
+						<a href="/stateview/mh">Maharashtra</a>
+						<a href="/stateview/rj">Rajasthan</a>
+					</div>
+				</div>
+				<div class="col-md-3" id="c6">
+					<p class="ei">East & Central India</p>
+					<div class="dropei">
+						<a href="/stateview/mp">Madhya Pradesh</a>
+						<a href="/stateview/br">Bihar</a>
+						<a href="/stateview/ct">Chattisgarh</a>
+						<a href="/stateview/jh">Jarkhand</a>
+						<a href="/stateview/wb">WestBengal</a>
+						<a href="/stateview/or">Odisha</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3" id="col">
+			<img id="ind" src="https://lh3.googleusercontent.com/C4_iGhxNsSSwJvlo_2RuuxzCGVyEMtuhCTaVmGTNn5F1PFQFoh214a61X0kJdB0zaQgZvwAxyCiOFGOyF3jenp9HZNQ3vwSiOMRiq_-AEEtJR5Iw71KpjSxsMJhRaWegYtX1u7G4qj0">
+		</div>
+	</div>
+	<img id='graph' src="https://lh3.googleusercontent.com/RCEdn6ptXol8QjAplLkXyJW8TPqEkfEqLhfFMLrE5K7LnWoxSda7fXSXn6b1UcUuQl7TdYYLWEgmEE1dxQO-aEFVDDB8pDY_3Jv86vB9s9gMFB69rjP_xroKW8-f6ny5mM5U5vwDhpE=w1920-h1080">
+	<div id="ta">
+		<table>
+			<tr>
+				<td>
+		   <div class="flip-card">
+			<div class="flip-card-inner" >
+			  <div class="flip-card-front" >
+				<h5 id="to1">CONFIRMED</h5>
+                </div>
+			  <div class="flip-card-back">
+				<h3 id="to" ><%= summary.total%></h3> 
+				
+			  </div>
+			</div>
+		  </div>
+		  
+		   
+
+</td>
+
+<td>
+		  <div class="flip-card">
+			<div class="flip-card-inner" >
+			  <div class="flip-card-front">
+				<h5>ACTIVE</h5>
+		       </div>
+			  <div class="flip-card-back">
+				<h3 id="ac"><%= summary.total - ( summary.discharged+ summary.deaths )%></h3> 
+				
+			  </div>
+			</div>
+		  </div>
+		 
+
+</td>
+<td>
+		  <div class="flip-card">
+			<div class="flip-card-inner">
+			  <div class="flip-card-front">
+				<h5>DISCHARGED</h5>
+			                </div>
+			  <div class="flip-card-back">
+				<h3 id="di"><%= summary.discharged%></h3> 
+				
+			  </div>
+			</div>
+		  </div>
+
+</td>
+<td>
+		  <div class="flip-card">
+			<div class="flip-card-inner">
+			  <div class="flip-card-front">
+				<h5>DEATHS</h5>
+                </div>
+			  <div class="flip-card-back">
+				<h3 id="de"><%= summary.deaths%></h3> 
+				
+			  </div>
+			</div>
+		  </div>
+
+		  </td>
+		  </tr>
+		  
+		</table>
+	</div>
+<div>
+	<tr>
+		<div class="alert alert-danger" id="al" role="alert">
+			<h6>Predicted cases : </h6>
+			<h3 ><%= summary.totalP%></h3>
+		  </div>
+	  </tr>
+</div>
+
+
+<footer class="footer">	 
+			  <div class="footer-social" >
+			  <ul>
+				<h3>Contributors</h3>
+				<li><a href="https://www.linkedin.com/in/karthik-surineni-008a0017b"><img src="https://img.icons8.com/android/50/000000/linkedin.png"/></a></li>
+				<li><a href="https://www.linkedin.com/in/vishnu-vardhan-reddy-thokala-a0803b169"><img src="https://img.icons8.com/android/50/000000/linkedin.png"/></i></a></li>
+				<li><a href="https://www.linkedin.com/in/saketh-vangala-8084b91a4"><img src="https://img.icons8.com/android/50/000000/linkedin.png"/></i></a></li>
+				
+			  </ul>
+	
+			  	<ul>
+			  		<li>Karthik</li>
+			  		<li>Vishnu</li>
+			  		<li>Saketh</li>
+			  	</ul>
+			  
+				</div>
+			</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

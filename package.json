@@ -1,0 +1,23 @@
+{
+  "name": "covid-19",
+  "version": "1.0.0",
+  "description": "Future Prediction of Covid19 Cases",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthik12s/Covid-19/issues"
+  },
+  "homepage": "https://github.com/karthik12s/Covid-19#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2"
+  }
+}
